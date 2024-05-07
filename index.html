@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Stop Watch</title>
+  </head>
+  <body>
+    <main id="container" class="flex-cntr">
+
+      <div id="stopWatchContainer">
+        <section id="top" class="flex-cntr">
+          <span id="hourCounter">00</span>
+          <span>:</span>
+          <span id="minCounter">00</span>
+          <span>:</span>
+          <span id="secCounter">00</span>
+          <span>:</span>
+          <span id="milisecCounter">00</span>
+        </section>
+        
+        <section id="bottom" class="flex-cntr">
+          <button id="start" class="enable">Start</button>
+          <button id="pause" class="disable">Pause</button>
+          <button id="lap" class="disable">Lap</button>
+          <button id="reset" class="disable">Reset</button>
+        </section>
+      </div>
+      
+      <div id="lapContainer">
+        <label for="lapContainer">Lap</label>
+        
+        <ol></ol>
+        
+        <footer class="flex-cntr">
+          <button id="clearLap">Clear</button>
+        </footer>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

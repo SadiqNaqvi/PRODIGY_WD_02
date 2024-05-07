@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  height: 100dvh;
+  width: 100dvw;
+  overflow: hidden;
+  background-color: rgb(1, 1, 16);
+}
+
+.flex-cntr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+  gap: 50px;
+}
+
+#stopWatchContainer {
+  height: 250px;
+  width: 500px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#stopWatchContainer > section {
+  height: 50%;
+  width: 100%;
+  gap: 10px;
+}
+
+#top {
+  font-size: 4rem;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+button.disable {
+  color: gray;
+  cursor: not-allowed;
+}
+
+#lapContainer {
+  height: 90%;
+  border-radius: 10px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#lapContainer > label {
+  margin: 2rem auto 1rem;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+  color: ghostwhite;
+}
+
+#lapContainer > ol {
+  flex: 1;
+  overflow-y: auto;
+}
+
+#lapContainer > ol::-webkit-scrollbar {
+  appearance: auto;
+  width: 4px;
+}
+
+#lapContainer > ol::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 6px;
+}
+
+.lapList {
+  padding: 10px 0;
+  font-size: 1.2rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+  list-style-type: none;
+}
+
+.lapList::marker {
+  content: "1";
+}
+
+#lapContainer > footer {
+  height: 60px;
+}
+
+#lapContainer > ol:not(:has(li)) ~ footer > button {
+  color: gray;
+  cursor: not-allowed;
+}
