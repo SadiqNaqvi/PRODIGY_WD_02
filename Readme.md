@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A simple Stop Watch app developed to complete the 2nd task of Web Development Internship from Prodigy Infotech.
+A simple Stop Watch app.
 
 ## Getting Started
 
